@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-montserrat: "Montserrat", Arial, sans-serif;
+}
+
+@media (min-width: 1536px) {
+    .hero-carousel .react-multiple-carousel__arrow--left {
+        left: calc(50% - 660px) !important;
+    }
+
+    .hero-carousel .react-multiple-carousel__arrow--right {
+        right: calc(50% - 660px) !important;
+    }
+}
