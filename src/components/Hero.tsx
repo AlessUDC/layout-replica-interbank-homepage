@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css"
 import { heroImages, heroPanels } from "../db/db"
 import HeroCarouselItem from "./hero/HeroCarouselItem"
 import CustomDot from "./hero/CustomDot"
+import { CustomLeftArrow, CustomRightArrow } from "./hero/HeroArrows"
 
 export default function Hero() {
     const [showArrows, setShowArrows] = useState(false)
@@ -101,6 +102,8 @@ export default function Hero() {
                 autoPlaySpeed={autoPlayDuration}
                 transitionDuration={700}
                 arrows={showArrows}
+                customLeftArrow={<CustomLeftArrow />}
+                customRightArrow={<CustomRightArrow />}
                 showDots={false}
                 beforeChange={(nextSlide) => {
                     const slidesCount = heroImages.length;
