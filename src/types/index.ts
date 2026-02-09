@@ -47,3 +47,36 @@ export type FooterSection = {
 
 // Tipo final del arreglo
 export type FooterList = FooterSection[]
+
+// Interfaces para el menú de navegación
+export interface NavbarItem {
+    label: string
+    href?: string
+}
+
+export interface NavbarGroup {
+    label: string
+    items: NavbarItem[]
+}
+
+export interface NavbarCategory {
+    label: string
+    icon?: string
+    groups: NavbarGroup[] | NavbarItem[] // Groups for "Productos", Items for "Promociones" (flattened) or simple lists
+    rightPanel?: {
+        style: 'default' | 'card' | 'empty'
+        title?: string
+        subtitle?: string
+        buttonText?: string
+        buttonHref?: string
+        image?: string
+        imageAlt?: string
+    }
+    image?: string
+}
+
+export interface NavbarLink {
+    label: string
+    href: string
+    categories?: NavbarCategory[]
+}

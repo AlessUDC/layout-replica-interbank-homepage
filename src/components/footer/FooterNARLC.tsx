@@ -81,42 +81,6 @@ export default function FooterNARLC() {
                                                             <LogoWhatsapp className="w-7.5 h-7.5 text-[#05be50]" />
                                                             <span className="text-xl font-semibold">{item.number}</span>
                                                         </p>
-
-                                                        {item.text && (
-                                                            <p className="text-base text-gray-500 mt-5 mb-2.5">
-                                                                {item.text}
-                                                            </p>
-                                                        )}
-
-                                                        {/* Subniveles */}
-                                                        {item.children && (
-                                                            <>
-                                                                <ul className="mt-2 space-y-1">
-                                                                    {item.children.map((child, i) => (
-                                                                        // Lima ... Provincias ... Canal de Ventas ... Convenios
-                                                                        <li
-                                                                            key={i}
-                                                                            className="text-base text-gray-600 my-4.5"
-                                                                        >
-                                                                            <div className="flex flex-col">
-                                                                                <span className="mb-1.5">
-                                                                                    {child.label}
-                                                                                </span>{" "}
-                                                                                <span className="text-xl font-semibold font-['Geometria',sans-serif]">
-                                                                                    {child.number}
-                                                                                </span>
-                                                                            </div>
-                                                                        </li>
-                                                                    ))}
-                                                                </ul>
-
-                                                                <div className="text-base text-black">
-                                                                    <p className="w-3/5 lg:w-full">
-                                                                        Lunes a viernes de 9am a 6pm<br className="hidden md:block" /> Sábados de 9am a 1pm
-                                                                    </p>
-                                                                </div>
-                                                            </>
-                                                        )}
                                                     </div>
                                                 )}
                                             </li>
@@ -166,41 +130,6 @@ export default function FooterNARLC() {
                                                     <LogoWhatsapp className="w-7.5 h-7.5 text-[#05be50]" />
                                                     <span className="text-xl lg:text-3xl font-semibold">{item.number}</span>
                                                 </p>
-
-                                                {item.text && (
-                                                    <p className="text-base text-gray-500 mt-5 mb-2.5">
-                                                        {item.text}
-                                                    </p>
-                                                )}
-
-                                                {/* Subniveles */}
-                                                {item.children && (
-                                                    <>
-                                                        <ul className="mt-2 space-y-1">
-                                                            {item.children.map((child, i) => (
-                                                                <li
-                                                                    key={i}
-                                                                    className="text-base text-gray-600 my-4.5"
-                                                                >
-                                                                    <div className="flex flex-col">
-                                                                        <span className="mb-1.5 lg:mb-0 line-clamp-2">
-                                                                            {child.label}
-                                                                        </span>{" "}
-                                                                        <span className="text-xl lg:text-3xl font-semibold font-['Geometria',sans-serif]">
-                                                                            {child.number}
-                                                                        </span>
-                                                                    </div>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-
-                                                        <div className="text-base text-black">
-                                                            <p className="w-full">
-                                                                Lunes a viernes de 9am a 6pm<br className="hidden lg:block" /> Sábados de 9am a 1pm
-                                                            </p>
-                                                        </div>
-                                                    </>
-                                                )}
                                             </div>
                                         )}
                                     </li>
